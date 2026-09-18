@@ -19,6 +19,50 @@
     img, div, button {
       margin-top: 10px;
     }
+
+    /* --- STYLING VOOR DE KNOPPEN --- */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;       /* Zorgt dat knoppen op mobiel onder elkaar gaan */
+            gap: 15px;             /* Ruimte tússen de knoppen */
+            justify-content: center;/* Centreert de groep knoppen */
+            margin-top: 25px;
+        }
+
+        button {
+            /* 1. Formaat & Grootte */
+            padding: 18px 32px;        /* Binnenruimte: 18px boven/onder, 32px links/rechts (maakt de knop groter) */
+            font-size: 18px;           /* Grote, duidelijke tekst */
+            font-weight: bold;         /* Dikgedrukte letters */
+            text-transform: uppercase; /* Alles in HOOFDLETTERS voor een krachtige look */
+            letter-spacing: 1px;       /* Wat meer ruimte tussen de letters */
+            
+            /* 2. Kleuren & Stijl */
+            color: #ffffff;            /* Witte tekstkleur */
+            background: linear-gradient(135deg, #ff4500, #ff6b00); /* Mooi oranje/rood verloop (fitness sfeer) */
+            border: none;              /* Geen lelijke standaard rand */
+            border-radius: 8px;        /* Licht afgeronde hoeken */
+            cursor: pointer;          /* Verandert de muis in een handje */
+            
+            /* 3. Schaduw & Diepte */
+            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4); /* Subtiele oranje gloed/schaduw */
+            
+            /* 4. Vloeiende overgang voor hover effect */
+            transition: all 0.3s ease;
+        }
+
+        /* EFFECT ALS JE ER MET DE MUIS OVERHEEN ZWEEFT (HOVER) */
+        button:hover {
+            background: linear-gradient(135deg, #e03e00, #ff5500); /* Iets donkerder oranje/rood */
+            transform: translateY(-3px);     /* De knop komt een klein stukje omhoog (lift effect) */
+            box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Schaduw wordt iets sterker */
+        }
+
+        /* EFFECT ALS JE ER OP KLIKT */
+        button:active {
+            transform: translateY(-1px);     /* Knop veert weer een beetje in */
+            box-shadow: 0 3px 10px rgba(255, 69, 0, 0.5);
+        }
   </style>
 <body>
 
