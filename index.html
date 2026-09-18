@@ -20,48 +20,46 @@
       margin-top: 10px;
     }
 
-    /* --- STYLING VOOR DE KNOPPEN --- */
-        .button-container {
+    .button-container {
             display: flex;
-            flex-wrap: wrap;       /* Zorgt dat knoppen op mobiel onder elkaar gaan */
-            gap: 15px;             /* Ruimte tússen de knoppen */
-            justify-content: center;/* Centreert de groep knoppen */
+            flex-wrap: wrap;       
+            gap: 15px;             
+            justify-content: center;
             margin-top: 25px;
         }
 
+        /* --- DONKERE / GRIJZE KNOPPEN --- */
         button {
-            /* 1. Formaat & Grootte */
-            padding: 18px 32px;        /* Binnenruimte: 18px boven/onder, 32px links/rechts (maakt de knop groter) */
-            font-size: 18px;           /* Grote, duidelijke tekst */
-            font-weight: bold;         /* Dikgedrukte letters */
-            text-transform: uppercase; /* Alles in HOOFDLETTERS voor een krachtige look */
-            letter-spacing: 1px;       /* Wat meer ruimte tussen de letters */
+            padding: 18px 32px;        
+            font-size: 18px;           
+            font-weight: bold;         
+            text-transform: uppercase; 
+            letter-spacing: 1px;       
             
-            /* 2. Kleuren & Stijl */
-            color: #ffffff;            /* Witte tekstkleur */
-            background: linear-gradient(135deg, #ff4500, #ff6b00); /* Mooi oranje/rood verloop (fitness sfeer) */
-            border: none;              /* Geen lelijke standaard rand */
-            border-radius: 8px;        /* Licht afgeronde hoeken */
-            cursor: pointer;          /* Verandert de muis in een handje */
+            color: #ffffff;            
+            /* Donkergrijs/zwart kleurverloop */
+            background: linear-gradient(135deg, #2b2b2b, #1a1a1a); 
+            border: 1px solid #3d3d3d; /* Subtiele grijze rand */
+            border-radius: 8px;        
+            cursor: pointer;          
             
-            /* 3. Schaduw & Diepte */
-            box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4); /* Subtiele oranje gloed/schaduw */
-            
-            /* 4. Vloeiende overgang voor hover effect */
+            /* Subtiele donkere schaduw */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
             transition: all 0.3s ease;
         }
 
-        /* EFFECT ALS JE ER MET DE MUIS OVERHEEN ZWEEFT (HOVER) */
+        /* HOVER EFFECT (Lichter grijs bij zweven) */
         button:hover {
-            background: linear-gradient(135deg, #e03e00, #ff5500); /* Iets donkerder oranje/rood */
-            transform: translateY(-3px);     /* De knop komt een klein stukje omhoog (lift effect) */
-            box-shadow: 0 6px 20px rgba(255, 69, 0, 0.6); /* Schaduw wordt iets sterker */
+            background: linear-gradient(135deg, #3a3a3a, #282828); 
+            border-color: #555555;
+            transform: translateY(-3px);     
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8); 
         }
 
-        /* EFFECT ALS JE ER OP KLIKT */
+        /* KLIK EFFECT */
         button:active {
-            transform: translateY(-1px);     /* Knop veert weer een beetje in */
-            box-shadow: 0 3px 10px rgba(255, 69, 0, 0.5);
+            transform: translateY(-1px);     
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
         }
   </style>
 <body>
