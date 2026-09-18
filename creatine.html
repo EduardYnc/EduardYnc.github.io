@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Creatine</title>
+    <title>Creatine</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Zet alle onderdelen onder elkaar */
+            align-items: center;    /* Centreert alles horizontaal */
+            justify-content: center;/* Centreert alles verticaal */
+            min-height: 100vh;      /* Zorgt dat de pagina de volle hoogte gebruikt */
+            margin: 0;              /* Verwijdert de standaard witruimte rondom */
+            text-align: center;     /* Centreert ook tekst binnen elementen */
+            font-family: sans-serif;/* Maakt het lettertype strak en modern */
+        }
+
+        /* Optioneel: voeg wat ruimte toe tussen elementen */
+        img, div, button {
+            margin-top: 10px;
+        }
+
+        /* Maak een container aan voor je tekst */
+        .tekst-container {
+            max-width: 700px;      /* Bepaalt hoe breed de tekst maximaal mag worden */
+            margin: 0 auto;       /* Centreert het blok netjes op het scherm */
+            padding: 0 20px;      /* Zorgt voor een klein beetje ruimte aan de zijkanten op mobiel */
+            text-align: left;      /* Houdt de tekst netjes links uitgelijnd */
+            line-height: 1.6;      /* Geeft wat meer ruimte tussen de regels tekst */
+        }
+
+        /* Styling voor de productlijst */
+        .product-info {
+            max-width: 600px;
+            text-align: left;     /* Houdt de opsomming netjes leesbaar */
+        }
+
+        .product-info ul {
+            list-style: none;     /* Verwijdert de standaard HTML-stippen */
+            padding: 0;
+        }
+
+        .product-info li {
+            margin-bottom: 12px;  /* Ruimte tussen de lijstelementen */
+        }
+    </style>
 </head>
-   <style>
-    body {
-      display: flex;
-      flex-direction: column; /* Zet alle onderdelen onder elkaar */
-      align-items: center;    /* Centreert alles horizontaal */
-      justify-content: center;/* Centreert alles verticaal */
-      min-height: 100vh;      /* Zorgt dat de pagina de volle hoogte gebruikt */
-      margin: 0;              /* Verwijdert de standaard witruimte rondom */
-      text-align: center;     /* Centreert ook tekst binnen elementen */
-    }
-
-    /* Optioneel: voeg wat ruimte toe tussen elementen */
-    img, div, button {
-      margin-top: 10px;
-    }
-
-      /* Maak een container aan voor je tekst */
-    .tekst-container {
-      max-width: 700px;     /* Bepaalt hoe breed de tekst maximaal mag worden */
-      margin: 0 auto;       /* Centreert het blok netjes op het scherm (links en rechts gelijke afstand) */
-      padding: 0 20px;      /* Zorgt voor een klein beetje ruimte aan de zijkanten op mobiel */
-      text-align: left;     /* Houdt de tekst netjes links uitgelijnd (fijner om te lezen) */
-      line-height: 1.6;     /* Geeft wat meer ruimte tussen de regels tekst */
-    }
-  </style>
-   
 <body>
 
-   <!-- Stop al je tekst in deze container -->
-  <div class="tekst-container">
-    <h1>Creatine gids</h1>
-    <h2>Wat is creatine?</h2>
-    <p>Creatine is een van de populairste en best onderzochte sportsupplementen ter wereld. Het is een lichaamseigen stof die wordt aangemaakt in de lever en nieren, maar die je ook binnenkrijgt via rood vlees en vis. Het grootste deel hiervan wordt opgeslagen in je spieren om te dienen als een supersnelle energiebron.</p>
-    
-    <p>Tijdens zware, explosieve inspanningen — zoals gewichtheffen of sprinten — helpt creatine je spieren om direct nieuwe energie aan te maken. Hierdoor kun je tijdens je training net wat zwaarder tillen of die extra herhaling eruit persen. Daarnaast helpt het je spieren sneller te herstellen tussen sets door en trekt het vocht naar de spiercellen, wat zorgt voor een vollere look en betere spiergroei.</p>
-    
-    <p>Voor het beste resultaat neem je dagelijks een vaste dosering van 3 tot 5 gram creatine monohydraat, ook op rustdagen. Omdat het een natuurlijk product is dat uitgebreid wetenschappelijk is onderzocht, is het gebruik ervan voor gezonde personen volkomen veilig. Het is de ideale ondersteuning voor iedereen die wil bouwen aan meer kracht en spiermassa.</p>
-  </div>
+    <!-- Algemene informatie -->
+    <div class="tekst-container">
+        <h1>Creatine gids</h1>
+        <h2>Wat is creatine?</h2>
+        <p>Creatine is een van de populairste en best onderzochte sportsupplementen ter wereld. Het is een lichaamseigen stof die wordt aangemaakt in de lever en nieren, maar die je ook binnenkrijgt via rood vlees en vis. Het grootste deel hiervan wordt opgeslagen in je spieren om te dienen als een supersnelle energiebron.</p>
+        
+        <p>Tijdens zware, explosieve inspanningen — zoals gewichtheffen of sprinten — helpt creatine je spieren om direct nieuwe energie aan te maken. Hierdoor kun je tijdens je training net wat zwaarder tillen of die extra herhaling eruit persen. Daarnaast helpt het je spieren sneller te herstellen tussen sets door en trekt het vocht naar de spiercellen, wat zorgt voor een vollere look en betere spiergroei.</p>
+        
+        <p>Voor het beste resultaat neem je dagelijks een vaste dosering van 3 tot 5 gram creatine monohydraat, ook op rustdagen. Omdat het een natuurlijk product is dat uitgebreid wetenschappelijk is onderzocht, is het gebruik ervan voor gezonde personen volkomen veilig. Het is de ideale ondersteuning voor iedereen die wil bouwen aan meer kracht en spiermassa.</p>
+    </div>
 
-  <div>
-     <h1>Kosso Nutrition – Creatine Monohydraat</h1>
-     <img src="kosso.jpg" style="width:500px;height:600px;">
-     <ul>
-        <li>
-           <p><strong>Waarom:</strong> Nederlands merk, 100% zuiver en zeer populair in de Benelux.</p>
-        </li>
-        <li>
-           <p> <strong>Waar te vinden:</strong> kossonutrition.nl & Body en Gym Shop.</p>
-        </li>
-     </ul>
-  </div>
-   
+    <!-- Productgedeelte Kosso Nutrition -->
+    <div class="product-info">
+        <h2>Kosso Nutrition – Creatine Monohydraat</h2>
+        <img src="kosso.jpg" style="width:100%; max-width:500px; height:auto; border-radius: 10px;">
+        
+        <ul>
+            <li>
+                <p><strong>Waarom de beste:</strong> Een ijzersterk Nederlands supplementenmerk opgericht door rapper en bodybuilder Albert Dervishaj (Kosso). Het staat bekend om no-nonsense, krachtig gedoseerde supplementen die extreem populair zijn in de Benelux fitnesscommunity.</p>
+            </li>
+            <li>
+                <p><strong>Kenmerken:</strong> 100% zuivere, smaakloze creatinemonohydraat. Los gemakkelijk op en bevat 0 gram suikers of overbodige toevoegingen.</p>
+            </li>
+            <li>
+                <p><strong>Waar te vinden:</strong> Direct via de officiële webshop (kossonutrition.nl), bij grote voedingswinkels zoals Body en Gym Shop, en in geselecteerde fysieke gym- en supplementenwinkels in Nederland en België.</p>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
