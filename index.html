@@ -1,81 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <title>Supplementen Gids</title>
-  </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Eerlijke Supplementen Gids</title>
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column; /* Zet alle onderdelen onder elkaar */
-      align-items: center;    /* Centreert alles horizontaal */
-      justify-content: center;/* Centreert alles verticaal */
-      min-height: 100vh;      /* Zorgt dat de pagina de volle hoogte gebruikt */
-      margin: 0;              /* Verwijdert de standaard witruimte rondom */
-      text-align: center;     /* Centreert ook tekst binnen elementen */
-    }
-
-    /* Optioneel: voeg wat ruimte toe tussen elementen */
-    img, div, button {
-      margin-top: 10px;
-    }
-
-    .button-container {
-            display: flex;
-            flex-wrap: wrap;       
-            gap: 15px;             
-            justify-content: center;
-            margin-top: 25px;
+    <style>
+        /* --- GLOBAL STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        /* --- DONKERE / GRIJZE KNOPPEN --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* --- HERO SECTION (Met je afbeelding als banner) --- */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 60vh; /* 60% van het scherm */
+            min-height: 400px;
+            background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 1)), 
+                        url('Gemini_Generated_Image_e6ezafe6ezafe6ez.jpeg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #ffffff, #aaaaaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 650px;
+            color: #cccccc;
+            margin-bottom: 25px;
+        }
+
+        /* --- CATEGORIE KNOPPEN --- */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: -30px auto 40px auto; /* Valt deels over de hero foto */
+            position: relative;
+            z-index: 2;
+            padding: 0 20px;
+        }
+
         button {
-            padding: 18px 32px;        
-            font-size: 18px;           
-            font-weight: bold;         
-            text-transform: uppercase; 
-            letter-spacing: 1px;       
-            
-            color: #ffffff;            
-            /* Donkergrijs/zwart kleurverloop */
-            background: linear-gradient(135deg, #2b2b2b, #1a1a1a); 
-            border: 1px solid #3d3d3d; /* Subtiele grijze rand */
-            border-radius: 8px;        
-            cursor: pointer;          
-            
-            /* Subtiele donkere schaduw */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+            padding: 16px 28px;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+            background: rgba(30, 30, 30, 0.85);
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             transition: all 0.3s ease;
         }
 
-        /* HOVER EFFECT (Lichter grijs bij zweven) */
         button:hover {
-            background: linear-gradient(135deg, #3a3a3a, #282828); 
-            border-color: #555555;
-            transform: translateY(-3px);     
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8); 
+            background: #ffffff;
+            color: #0d0d0d;
+            border-color: #ffffff;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(255, 255, 255, 0.2);
         }
 
-        /* KLIK EFFECT */
-        button:active {
-            transform: translateY(-1px);     
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+        /* --- EXTRA INFO SECTIE (Waarom deze gids?) --- */
+        .info-section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
         }
-  </style>
+
+        .info-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: #181818;
+            border: 1px solid #282828;
+            padding: 30px 20px;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #444444;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #ff4500; /* Accenteer met een energieke kleur */
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #aaa;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.85rem;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 60px;
+        }
+    </style>
+</head>
 <body>
 
-    <h1>De Eerlijke Supplementen Gids</h1>
-    <p><strong> Kies een categorie en bekijk direct de beste opties uit de supermarkt of winkel. </strong></p>
-  <div>
-     <img src="Gemini_Generated_Image_e6ezafe6ezafe6ez.jpeg"style="width:800px;height:400px; display: block; margin-bottom: 10px;">
-  </div>
+    <!-- HERO HEADER WITH BACKGROUND IMAGE -->
+    <section class="hero">
+        <h1>De Eerlijke Supplementen Gids</h1>
+        <p>Geen verkooppraatjes of dure marketing. Bekijk direct de beste eiwitbronnen en supplementen uit de supermarkt en winkels bij jou in de buurt.</p>
+    </section>
 
-  <div>
-    <button onclick="document.location='creatine.html'">Creatine</button>
-    <button onclick="document.location='wheyprotein.html'">Whey Protein</button>
-    <button onclick="document.location='eiwitwark.html'">Eiwitkwark & Yoghurt</button>
-    <button onclick="document.location='eiwitshakes.html'">Eiwitshakes / Kant-en-klaar</button>
-  </div>
+    <!-- INTERACTIEVE KNOPPEN -->
+    <div class="button-container">
+        <button onclick="document.location='creatine.html'">Creatine</button>
+        <button onclick="document.location='wheyprotein.html'">Whey Protein</button>
+        <button onclick="document.location='eiwitkwark.html'">Eiwitkwark & Yoghurt</button>
+        <button onclick="document.location='eiwitshakes.html'">Kant-en-klaar Shakes</button>
+    </div>
+
+    <!-- EXTRA INFORMATIE OVER DE SITE -->
+    <section class="info-section">
+        <h2>Waarom onze gids gebruiken?</h2>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🔍 100% Onafhankelijk</h3>
+                <p>Wij vergelijken producten puur op ingrediënten, voedingswaarden en prijs. Geen gesponsorde deals.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💪 Beste Prijs/Kwaliteit</h3>
+                <p>Zie in één oogopslag hoeveel gram eiwit je krijgt per euro bij reguliere supermarkten.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Direct Inzicht</h3>
+                <p>Geen lange artikelen, maar duidelijke categorieën waarmee je direct de juiste keuze maakt.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 De Eerlijke Supplementen Gids. Alle rechten voorbehouden.
+    </footer>
 
 </body>
 </html>
