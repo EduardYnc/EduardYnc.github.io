@@ -1,12 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-<title>Creatine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proteïne Gids - De Eerlijke Supplementen Gids</title>
+
+    <style>
+        /* --- ALGEMENE STYLING --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Donkere achtergrond */
+            color: #e0e0e0;            /* Lichte tekstkleur */
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- TERUG KNOP STYLING --- */
+        .nav-container {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #ffffff;
+            background-color: #1e1e1e;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            border: 1px solid #2e2e2e;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn:hover {
+            background-color: #ffffff;
+            color: #121212;
+            border-color: #ffffff;
+            transform: translateX(-4px); /* Beweegt subtiel naar links bij hover */
+        }
+
+        /* --- TEKST CONTAINER (ALGEMENE INFO) --- */
+        .tekst-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #1e1e1e;
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid #2e2e2e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .tekst-container h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tekst-container h2 {
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 8px;
+        }
+
+        .tekst-container p {
+            color: #b0b0b0;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* --- PRODUCT SECTIE --- */
+        .product-card {
+            max-width: 800px;
+            width: 100%;
+            background-color: #1e1e1e;
+            border-radius: 16px;
+            border: 1px solid #2e2e2e;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .product-card h2 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            border: 1px solid #333333;
+        }
+
+        /* LIST STYLING */
+        .product-info-list {
+            list-style: none;
+            width: 100%;
+        }
+
+        .product-info-list li {
+            background-color: #262626;
+            border-left: 4px solid #ffffff;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 12px;
+        }
+
+        .product-info-list p {
+            color: #cccccc;
+            font-size: 0.98rem;
+            margin: 0;
+        }
+
+        .product-info-list strong {
+            color: #ffffff;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            .tekst-container, .product-card {
+                padding: 20px;
+            }
+
+            .tekst-container h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<h1>Proteine gids</h1>
-<p>Wat is Whey Protein?</p>
+    <!-- NAVIGATIE / TERUG KNOP -->
+    <div class="nav-container">
+        <a href="index.html" class="back-btn">← Terug naar startpagina</a>
+    </div>
+
+    <!-- ALGEMENE PROTEÏNE INFO -->
+    <div class="tekst-container">
+        <h1>Proteïne Gids</h1>
+        <h2>Wat is Whey Protein?</h2>
+        <p>Whey proteïne (wei-eiwit) is het vloeibare bijproduct dat ontstaat bij het maken van kaas. Het is een van de hoogste kwaliteit eiwitbronnen die er bestaat, omdat het alle essentiële aminozuren bevat die je lichaam nodig heeft om spieren te herstellen en op te bouwen na intensieve inspanning.</p>
+        
+        <p>Wanneer je traint, ontstaan er kleine micro-scheurtjes in je spierweefsel. Eiwitten leveren de bouwstenen (aminozuren) om deze scheurtjes te herstellen, waardoor je spieren sterker en groter worden. Whey proteïne wordt extreem snel door het lichaam opgenomen, wat het de ideale shake maakt voor direct na de training of als aanvulling op je dagelijkse eiwitinname.</p>
+        
+        <p>Er zijn hoofdzakelijk twee vormen: **Whey Concentraat** (bevat gemiddeld 70-80% eiwit en is het meest voordelig) en **Whey Isolaat** (verder gefilterd, bevat tot 90% eiwit en vrijwel geen lactose of vetten). Voor de meeste sporters is een dagelijkse eiwitshake een eenvoudige en smakelijke manier om aan hun eiwitbehoefte te komen.</p>
+    </div>
+
+    <!-- PRODUCT KAART 1: XXL NUTRITION -->
+    <div class="product-card">
+        <h2>XXL Nutrition – Whey Delicious</h2>
+        
+        <img src="xxl_whey.jpg" alt="XXL Nutrition Whey Delicious" class="product-image">
+        
+        <ul class="product-info-list">
+            <li>
+                <p><strong>Waarom de beste:</strong> Al jarenlang de absolute nummer 1 eiwitshake in de Benelux. XXL Nutrition staat bekend om hun ongeëvenaarde smaakkwaliteit en hoge zuiverheid zonder nare chemische nasmaak.</p>
+            </li>
+            <li>
+                <p><strong>Kenmerken:</strong> Bevat een hoogwaardige combinatie van whey concentraat en isolaat. Het lost direct op in melk of water zonder klontjes en is verkrijgbaar in tientallen heerlijke smaken.</p>
+            </li>
+            <li>
+                <p><strong>Waar te vinden:</strong> Direct te bestellen via de officiële webshop (xxlnutrition.com), bij aangesloten sportscholen en grote fysieke supplementenwinkels.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PRODUCT KAART 2: OPTIMUM NUTRITION -->
+    <div class="product-card">
+        <h2>Optimum Nutrition – Gold Standard 100% Whey</h2>
+        
+        <img src="on_whey.jpg" alt="Optimum Nutrition Gold Standard Whey" class="product-image">
+        
+        <ul class="product-info-list">
+            <li>
+                <p><strong>Waarom de beste:</strong> Wereldwijd het meest verkochte en bekroonde proteïnepoeder ooit. Optimum Nutrition garandeert consistente topprestaties, een uitstekend aminozuurprofiel en strenge kwaliteitscontroles.</p>
+            </li>
+            <li>
+                <p><strong>Kenmerken:</strong> Bevat voornamelijk Whey Isolaat als primaire eiwitbron, verrijkt met spijsverteringsenzymen (zoals lactase) voor een optimale opname en lichtheid op de maag. Bevat 24 gram eiwit per dosering.</p>
+            </li>
+            <li>
+                <p><strong>Waar te vinden:</strong> Verkrijgbaar via grote webshops zoals Bol.com, Body & Fit, Decathlon en in fysieke fitnesszaken wereldwijd.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- PRODUCT KAART 3: BODY & FIT -->
+    <div class="product-card">
+        <h2>Body & Fit – Whey Perfection</h2>
+        
+        <img src="bodyfit_whey.jpg" alt="Body & Fit Whey Perfection" class="product-image">
+        
+        <ul class="product-info-list">
+            <li>
+                <p><strong>Waarom de beste:</strong> De populairste keuze voor wie zoekt naar de beste prijs-kwaliteitverhouding. Body & Fit biedt met Whey Perfection een zeer complete en betaalbare eiwitshake voor dagelijks gebruik.</p>
+            </li>
+            <li>
+                <p><strong>Kenmerken:</strong> Bevat een mix van Whey Isolaat, Concentraat en Hydrolysaat. Bevat 22 gram eiwit per scoop, lage suiker- en vetwaarden en is beschikbaar in een enorm aanbod aan uiteenlopende smaken.</p>
+            </li>
+            <li>
+                <p><strong>Waar te vinden:</strong> Exclusief en direct te bestellen via de officiële webshop (bodyandfit.com) met snelle levering in Nederland en België.</p>
+            </li>
+        </ul>
+    </div>
 
 </body>
 </html>
